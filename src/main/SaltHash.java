@@ -46,7 +46,6 @@ public class SaltHash {
 		byte[] salt = new byte[8];
 		SecureRandom random = SecureRandom.getInstance("SHA1PRNG");
 		random.nextBytes(salt);
-		System.out.println(new String(salt, StandardCharsets.UTF_8));
 		return salt;
 	}
 
